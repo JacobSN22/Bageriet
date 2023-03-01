@@ -4,8 +4,11 @@ import { Nav } from './nav'
 
 export const Header = () => {
   return (
-    <header>
+    <HeaderStyle>
+        <header>
         <Nav />
-    </header>
+        </header>
+    </HeaderStyle>
+    
   )
 }
