@@ -1,12 +1,17 @@
+import { Router } from "./Components/App/Approuter/router";
 import { Footer } from "./Components/Partials/footer";
 import { Header } from "./Components/Partials/header";
-import { Nav } from "./Components/Partials/nav";
+import { Container } from "./Components/Style/container";
 
 function App() {
   return (
     <>
-    <Header />
-    <Footer />
+    <Container>
+      <Header />
+      <Router />
+      <Footer />
+    </Container>
+    
     </>
   );
 }
