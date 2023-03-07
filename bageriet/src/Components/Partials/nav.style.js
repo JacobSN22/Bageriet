@@ -23,9 +23,9 @@ export const NavStyle = styled.nav`
     }
 
     .ontop{
-        position: absolute;
-        top: 0;
-        width: 100%;
+        width: 100%; 
+        background-color: ${props => props.theme.colors.quaternary};
+        
        
     }
     
