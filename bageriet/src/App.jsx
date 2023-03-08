@@ -1,15 +1,25 @@
-import { Router } from "./Components/App/Approuter/router";
+import { Route, Routes } from "react-router-dom";
+import { Contact } from "./Components/Pages/contact";
+import { Login } from "./Components/Pages/login";
+import { Products } from "./Components/Pages/products";
 import { Footer } from "./Components/Partials/footer";
-import { Header } from "./Components/Partials/header";
+import { Hero } from "./Components/Partials/Hero";
+import { Navbar } from "./Components/Partials/nav";
 import { Container } from "./Components/Style/container";
 
 function App() {
   return (
     <>
     <Container>
-      <Header />
-      <Router />
+
+    <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path='/kontakt' element={<Contact />} />
+        <Route path='/produkter' element={<Products />} />
+        <Route path='/login' element={<Login />} />
+    </Routes>
       <Footer />
+    
     </Container>
     
     </>

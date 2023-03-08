@@ -1,10 +1,9 @@
 import styled from 'styled-components'
 import HeaderLogo from "../fonts-images/images/slides/slide1.jpg";
 
-export const NavStyle = styled.nav`
+export const HeroStyle = styled.nav`
         text-align: center;
         color: ${props => props.theme.colors.primary};
-        background-color: ${props => props.theme.colors.quaternary};
 
     li {
         display: inline;

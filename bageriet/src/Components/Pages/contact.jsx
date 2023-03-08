@@ -1,9 +1,11 @@
 import React from 'react'
+import { Navbar } from '../Partials/nav'
 import { ContactStyle } from '../Style/contact.style'
 
 export const Contact = () => {
   return (
     <>
+    <Navbar />
     <ContactStyle>
       <h2>Kontakt os</h2>
       <div className='grid'>

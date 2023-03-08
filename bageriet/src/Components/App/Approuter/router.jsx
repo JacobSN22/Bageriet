@@ -4,11 +4,13 @@ import { Contact } from '../../Pages/contact'
 import { Home } from '../../Pages/home'
 import { Login } from '../../Pages/login'
 import { Products } from '../../Pages/products'
+import { Hero } from '../../Partials/Hero'
+import { Navbar } from '../../Partials/nav'
 
 export const Router = () => {
   return (
     <Routes>
-        <Route index element={<Home />} />
+        <Route index element={<Hero />} />
 
         <Route path='/kontakt' element={<Contact />} />
         <Route path='/produkter' element={<Products />} />
