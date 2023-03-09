@@ -5,7 +5,6 @@ import { Home } from '../../Pages/home'
 import { Login } from '../../Pages/login'
 import { Products } from '../../Pages/products'
 import { Hero } from '../../Partials/Hero'
-import { Navbar } from '../../Partials/nav'
 
 export const Router = () => {
   return (
