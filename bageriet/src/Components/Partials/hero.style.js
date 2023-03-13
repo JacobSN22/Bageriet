@@ -13,6 +13,9 @@ export const HeroStyle = styled.nav`
             text-decoration: none;
             font-family: sans-serif;
         }
+        a:hover {
+            color: ${props => props.theme.colors.dark};
+        }
     }
 
     ul {

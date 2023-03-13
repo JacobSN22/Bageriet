@@ -5,14 +5,18 @@ export const NavStyle = styled.nav`
         text-align: center;
         color: ${props => props.theme.colors.primary};
         background-color: ${props => props.theme.colors.quaternary};
+        padding-bottom: 2em;
 
     li {
         display: inline;
-        margin: 0 2em;
+        margin: 2em 2em;
         a {
             color: ${props => props.theme.colors.primary};
             text-decoration: none;
             font-family: sans-serif;
+        }
+        a:hover {
+            color: ${props => props.theme.colors.dark};
         }
     }
 

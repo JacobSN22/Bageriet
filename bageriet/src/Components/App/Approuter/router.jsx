@@ -10,7 +10,6 @@ export const Router = () => {
   return (
     <Routes>
         <Route index element={<Hero />} />
-
         <Route path='/kontakt' element={<Contact />} />
         <Route path='/produkter' element={<Products />} />
         <Route path='/login' element={<Login />} />

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const ContactStyle = styled.div`
+export const LoginStyle = styled.div`
 
 h2 {
     text-align: center;
@@ -8,17 +8,24 @@ h2 {
     font-family: 'Lobster', cursive;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3em;
-    padding: 0 18em;
+.center {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center div {
+  width: 500px;
+  height: 500px;
+}
+
+.right {
     text-align: right;
 }
 
 input {
     display: block;
-    padding: 0.5em 0 0.5em 0.5em;
+    padding: 0.7em 0 0.7em 0.7em;
     width: 100%;
     margin: 0 0 1em 0;
     background-color: ${props => props.theme.colors.senary};
@@ -26,19 +33,6 @@ input {
 }
 
 input::placeholder {
-    color: ${props => props.theme.colors.tertiary};
-}
-
-textarea {
-    display: block;
-    padding: 0.5em 0 0 0.5em;
-    resize: none;
-    width: 100%;
-    background-color: ${props => props.theme.colors.senary};
-    border: 0;
-}
-
-textarea::placeholder {
     color: ${props => props.theme.colors.tertiary};
 }
 
