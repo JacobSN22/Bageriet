@@ -1,8 +1,8 @@
-import styled from 'styled-components'
+// import styled from 'styled-components'
 
-export const HeaderStyle = styled.header`
+// export const HeaderStyle = styled.header`
 
-    img {
-        width: 100%;
-    }
-`
+//     img {
+//         width: 100%;
+//     }
+// `
