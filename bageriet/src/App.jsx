@@ -4,7 +4,6 @@ import { Login } from "./Components/Pages/login";
 import { Products } from "./Components/Pages/products";
 import { Footer } from "./Components/Partials/footer";
 import { Hero } from "./Components/Partials/Hero";
-import { Navbar } from "./Components/Partials/nav";
 import { Container } from "./Components/Style/container";
 
 function App() {
