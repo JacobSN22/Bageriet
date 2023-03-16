@@ -1,5 +1,4 @@
 import React from 'react'
-import { Header } from '../Partials/header'
 import { Navbar } from '../Partials/nav'
 import { LoginStyle } from '../Style/login-style'
 
