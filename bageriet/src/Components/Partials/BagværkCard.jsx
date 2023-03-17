@@ -20,7 +20,7 @@ export const BagværkCard = ({data}) => {
     gap: 1rem;
      img {
         aspect-ratio: 1/1;
-        
+        object-fit: cover;
     }
 
     > :nth-child(2) {
