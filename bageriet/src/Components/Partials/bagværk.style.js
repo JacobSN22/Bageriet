@@ -5,8 +5,11 @@ text-align: center;
 
 
 .grid {
+    *{
+        /* border: solid 1px red; */
+    }
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 1em;
     margin: 5em 13em;
 }
@@ -15,10 +18,7 @@ text-align: center;
     padding: 0 4em 0 4em;
 }
 
-img {
-    width: 400px;
-    height: 350px;
-}
+
 
 h2 {
     font-size: 1.3em;

@@ -1,12 +1,6 @@
-export const theme = {
-	colors: {
-		primary: "#FFFFFF",
-		secondary: "#333333",
-		tertiary: "#BBC8D4",
-		quaternary: "#6D8FAB",
-		quinary: "#252525",
-		senary: "#F0F7FD",
-		dark: "#000000",
-	},
-	fonts: ['Lobster', 'Open Sans']
+import { Colors } from "./Variants/Colors";
+
+export const theme = (themeMode) => {
+	return {colors: Colors(themeMode),
+	fonts: ['Lobster', 'Open Sans']}
 }

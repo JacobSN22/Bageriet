@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { BagværkStyle } from "./bagværk.style";
+import { BagværkCard } from "./BagværkCard";
 
 export const Bagværk = () => {
     const url = "https://api.mediehuset.net/bakeonline/products";
@@ -15,18 +16,9 @@ export const Bagværk = () => {
     return (
         <BagværkStyle>
             <div className="grid">
-                {bagværk.map((data) => {
-                    return( 
-                    <div className="bagværk" key={data.id}>
-                        <img src={data.image.fullpath} alt="Example" />
-                        <h2 className="comments">{data.num_comments}</h2>
-                        <h2>{data.title}</h2>
-                        <p>{data.teaser} </p> 
-                        <button>SE MERE</button>
-                    </div>
-                    )
-                
-                })}
+                {bagværk.map((data, i) =>
+                    <BagværkCard data={data} key={i}/>
+                )}
             </div>            
         </BagværkStyle>
     );
