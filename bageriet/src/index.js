@@ -6,13 +6,12 @@ import { ThemeProvider } from 'styled-components';
 import { BrowserRouter } from 'react-router-dom';
 import { AuthProvider } from './Components/Provider/AuthProvider';
 import { GlobalStyles } from './Components/Style/Global';
-const themeMode = "dark"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
       <BrowserRouter>
         <AuthProvider>
-          <ThemeProvider theme={theme(themeMode)} >
+          <ThemeProvider theme={theme} >
             <GlobalStyles />
             <App />
           </ThemeProvider>

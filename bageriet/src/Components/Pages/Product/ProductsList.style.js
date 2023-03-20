@@ -1,31 +1,34 @@
 import styled from 'styled-components'
 
-export const BagværkStyle = styled.div`
+export const ProductListStyle = styled.div`
 text-align: center;
 
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 1em;
-    margin: 5em 13em;
 }
+
+img {
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
 
 .news {
     padding: 0 4em 0 4em;
 }
 
-
-
 h2 {
     font-size: 1.3em;
-    color: ${props => props.theme.colors.secondary};
     font-family: sans-serif;
     margin: 0;
+    color: ${props => props.theme.colors.secondary};
 }
 
 .comments {
     color: ${props => props.theme.colors.tertiary};
+
 }
 
 p {
